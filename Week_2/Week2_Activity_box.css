@@ -1,0 +1,17 @@
+body
+{
+    display:flex;
+    
+}
+.outer
+{
+    background-color: #FF90E2;
+}
+
+.inner
+{
+    background-color: #A9CCCC;
+    margin: 10px;
+    border:3px solid #FFF6C9;
+    display: inline-block;
+}

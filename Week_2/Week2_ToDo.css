@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+.code{
+    background-color: darkgray;
+    white-space: pre;
+    border: 1px solid black;
+    border-radius: 10px;
+}

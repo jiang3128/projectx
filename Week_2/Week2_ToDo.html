@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang = 'en'>
+    <head>
+        <title>
+        </title>
+        <link rel = "stylesheet" href = "Week2_ToDo.css">
+    </head>
+    <body>
+        <h1>Lecture 3: What I learned?</h1>
+        <h2>HTML Geolocation</h2>
+        <p>The HTML Geolocation API is used to locate a user's position but based on it could compromise personal privacy, the position is not available if the user is not aprroving it.</p>
+        <p>There are serveral properties that the programmer could get the user's location which are:</p>
+        <ul>
+            <li>coords.latitude - The latitude as a decimal number</li>
+            <li>coords.longtitude - The longtitude as a decimal number</li>
+            <li>coords.accuracy - The accuracy of position</li>
+            <li>coords.altitude - The altitude in meters above the mean sea level</li>
+            <li>watchPosition() and clearWatch() is used for getting the user's position and continues to return updated position until it reached the clearwatch() to stop tracking the curent address</li>
+        </ul>
+        <p>I always curious about how the phone apps like google maps and uber can track the drivers location, I know it is definately not just pressing the GPS button</p>
+        <p>through w3schools I am to be able to understand how the properties works and how to use it when you creating an app when the position is needed. 
+            Also, it teaches me how the browser getting your personal information when you might or might not noticed.</p>
+        <p><a href = "https://www.w3schools.com/html/html5_geolocation.asp">w3schools</a> is where I got the fun aspect of HTML. Go check it out!</p>
+        <p>Code samples is below:</p>
+        <div class = "code">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+            
+            &lt;p&gt;Click the button to get your coordinates.&lt;/p&gt;
+            
+            &lt;button onclick="getLocation()"&gt;Try It&lt;/button&gt;
+            
+            &lt;p id="demo"&gt;&lt;/p&gt;
+            
+            &lt;script&gt;
+            var x = document.getElementById("demo");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+                
+            function showPosition(position) {
+                x.innerHTML="Latitude: " + position.coords.latitude + 
+                "&lt;br&gt;Longitude: " + position.coords.longitude;
+            }
+            &lt;/script&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt; 
+        </div>
+    </body>
+</html>
