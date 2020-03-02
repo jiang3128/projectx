@@ -7,7 +7,8 @@
         <link rel = "stylesheet" href = "Week2_ToDo.css">
     </head>
     <body>
-        <h1>Lecture 3: What I learned?</h1>
+        <div>
+        <h1>Week 2: What I learned?</h1>
         <h2>HTML Geolocation</h2>
         <p>The HTML Geolocation API is used to locate a user's position but based on it could compromise personal privacy, the position is not available if the user is not aprroving it.</p>
         <p>There are serveral properties that the programmer could get the user's location which are:</p>
@@ -23,6 +24,7 @@
             Also, it teaches me how the browser getting your personal information when you might or might not noticed.</p>
         <p><a href = "https://www.w3schools.com/html/html5_geolocation.asp">w3schools</a> is where I got the fun aspect of HTML. Go check it out!</p>
         <p>Code samples is below:</p>
+        </div>
         <div class = "code">
             &lt;!DOCTYPE html&gt;
             &lt;html&gt;
@@ -53,6 +55,87 @@
             
             &lt;/body&gt;
             &lt;/html&gt; 
+        </div>
+        <h1>Week 3</h1>
+        <h2>CSS: hover</h2>
+        <p>The hover selector is used to select elements and changing the base color when you mouse over it.
+            It can be used on all elements and not just on links, but it must come after :link and :visited in the 
+            CSS definition to be effective.
+        </p>
+        <p>Time for a trial:</p>
+        <p id = "hoverJerry">jerry</p>
+        <p id = "hoverTom">tom</p>
+        <p>TA mentioned that hover CSS is one of the animation that can be used in our project 1, so browsing it on w3schools
+            is a good idea that can be having. I learned how the properties can be used on the website such as our UWEC website
+            and w3schools. This is useful to notify the user what they are selecting, and gives more interaction between the user
+            and websites.
+        </p>
+        <p><a href ="https://www.w3schools.com/cssref/sel_hover.asp">w3schools: hover</a> Check it Out!</p>
+        <P>The CSS that I'm using on the hover showing:</P>
+        <div class ="code">
+            #hoverJerry{
+                background-color: black;
+                color:white;
+                padding: 20px;
+                text-align: center;
+            }
+            #hoverJerry:hover{
+                background-color: darkgray;
+                font-size: larger;
+                text-transform: uppercase;
+            }
+            #hoverTom{
+                background-color: black;
+                color:white;
+                padding: 20px;
+                text-align: center;
+            }
+            #hoverTom:hover{
+                background-color: rgb(236, 167, 167);
+                font-size: larger;
+                text-transform: uppercase;
+            }
+        </div>
+        <div class="week4">
+        <h1>Week 4</h1>
+        <h2>CSS Navigation Bars</h2>
+        <p>Having a navigation on your website make it easy for the user to find what they are actually wants, with CSS 
+            you can make the navigation more attractive to the user.
+        </p>
+        <p>Here is an example:</p>
+        <ul>
+            <li><a href>Home</a></li>
+            <li><a href>Job</a></li>
+            <li><a href>Contact</a></li>
+        </ul>
+        <p> Learning how to use the navigation bar it makes the user could interact with the website.
+            Since it ease the user's life it would be a great idea to put the navigation bar into my project 1.
+            Most of the webpages are having a different style of navigation bars on side, it can be vertically or horizontally
+            depends on the webpage designs.
+        </p>
+        <p><a href ="https://www.w3schools.com/css/css_navbar.asp">w3schools: Navigation Bars</a> Check it Out!</p>
+        <P>The CSS that I'm using on the navigation bar:</P>
+        <div id="code">
+            .week4>ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                background-color: cornflowerblue;
+            }
+            .week4>ul>li{
+                float:left;
+            }
+            .week4>ul>li a{
+                display: block;
+                color:White;
+                text-align: center;
+                padding:14px 16px;
+            }
+            .week4>ul>li a:hover{
+                background-color: crimson;
+            }
+        </div>
         </div>
     </body>
 </html>

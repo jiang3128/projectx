@@ -8,3 +8,51 @@ body{
     border: 1px solid black;
     border-radius: 10px;
 }
+#hoverJerry{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+#hoverJerry:hover{
+    background-color: darkgray;
+    font-size: larger;
+    text-transform: uppercase;
+}
+#hoverTom{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+#hoverTom:hover{
+    background-color: rgb(236, 167, 167);
+    font-size: larger;
+    text-transform: uppercase;
+}
+.week4>ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: cornflowerblue;
+}
+.week4>ul>li{
+    float:left;
+}
+.week4>ul>li a{
+    display: block;
+    color:White;
+    text-align: center;
+    padding:14px 16px;
+}
+.week4>ul>li a:hover{
+    background-color: crimson;
+}
+.week4>#code
+{
+    background-color: darkgray;
+    white-space: pre;
+    border: 1px solid black;
+    border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+Parent{
+    align-items:
+    flex-direction:
+    justify-content:
+    flex-wrap:
+    align-:
+}
+Child{
+    corder:
+    align-self:
+    flex-grow:
+    flex-basis:
+    flex-shrink:
+}
