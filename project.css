@@ -1,0 +1,110 @@
+h1{
+   position: relative; 
+   text-align:center;
+   list-style: none;
+   font-size: 50px;
+   text-decoration: underline overline;
+   font-family:sans-serif; 
+}
+body	{
+   font-family:serif;
+}
+ul		{
+   position:relative;
+   left:0;
+   right:0;
+   margin:0px;
+   padding:0px;
+   list-style:none;
+   width:auto;
+   z-index: 3000;
+}
+ul li	{
+   border-left:1px solid white;
+   float:left;width:24.70%;
+   height:45px;
+   background-color:#111;
+   opacity:0.9;
+   line-height:45px;
+   text-align:center;
+   font-size:18px;
+}
+ul li a	{
+   color:white;
+   text-decoration:none;
+   display:block
+}
+ul li a:hover	{
+   background-color:cornflowerblue
+}
+ul li ul li	{
+   text-align:left;
+   display:none;
+   width:100%;
+   background-color:#555
+}
+ul li:hover ul li	{
+   display:block
+}
+
+#slider	{
+   height:500px;
+   border:1px solid black; 
+   margin:0 auto;
+   position: fixed;
+   overflow:hidden
+}
+#slider img	{
+   width:33.05%;
+   height:100%
+}
+#slider 	{
+   position:relative;
+   width:300%;
+   margin:0;
+   text-align:left;
+   animation:20s slider infinite
+}
+@keyframes slider		{
+   15%{left:0%}
+   30%{left:-100%}
+   45%{left:-200%}
+   70%{left:-200%}
+   85%{left:-100%}
+   99%{left:0%}	
+   }
+
+body{
+   background-color: whitesmoke;
+}
+
+.description{
+   background-color: darkgray;
+   border: 1px solid black;
+   border-radius: 10px;
+}
+.description>a{
+   font-size: 25px;
+   font-style: initial;
+}
+
+.photo{
+   margin: 10px;
+   background-color: white;
+   box-shadow: -5px 5px 10px black;
+   display: inline-block;
+   position: relative;
+}
+.employee{
+   display: block;
+   padding: 10px 10px 0 10px;
+   object-fit: cover;
+   width: 200px;
+   height: 200px;
+}
+.label{
+   text-align: center;
+   font-family: 'Permanent Marker', cursive;
+   font-size: 15pt;
+}
+
