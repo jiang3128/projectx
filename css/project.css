@@ -87,6 +87,10 @@ body{
    font-size: 25px;
    font-style: initial;
 }
+.description>ol{
+   font-size: 20px;
+   font-style: normal;
+}
 
 .photo{
    margin: 10px;
